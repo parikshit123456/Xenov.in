@@ -196,7 +196,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-
 /* ==========================================================================
    Customer Reviews Carousel
    Manual navigation only — no autoplay. Prev/Next buttons + pagination dots.
@@ -207,6 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const prevBtn = document.getElementById('prevSlideBtn');
   const nextBtn = document.getElementById('nextSlideBtn');
   const dotsContainer = document.getElementById('carouselDots');
+  const viewport = document.getElementById('carouselViewport'); // NEW
 
   if (!track || !prevBtn || !nextBtn || !dotsContainer) return;
 
@@ -225,6 +225,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const dots = Array.from(dotsContainer.children);
 
+  // NEW — measures the active slide's real height and applies it to the viewport
+  const updateHeight = () => {
+    if (!viewport) return;
+    const activeSlide = slides[currentIndex];
+    if (activeSlide) {
+      viewport.style.height = `${activeSlide.scrollHeight}px`;
+    }
+  };
+
   const updateCarousel = () => {
     track.style.transform = `translateX(-${currentIndex * 100}%)`;
 
@@ -234,6 +243,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Disable Prev on the first slide and Next on the last — no looping
     prevBtn.disabled = currentIndex === 0;
     nextBtn.disabled = currentIndex === totalSlides - 1;
+
+    updateHeight(); // NEW
   };
 
   const goToSlide = (index) => {
@@ -244,5 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
   prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
   nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
 
-  updateCarousel(); // set initial state (Prev disabled on slide 1, is-active on slide 1)
+  window.addEventListener('resize', updateHeight); // NEW — recalculate on rotate/resize
+
+  updateCarousel(); // set initial state (Prev disabled on slide 1, is-active on slide 1, height set)
 });
