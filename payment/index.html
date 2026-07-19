@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Blender Masterclass – Freelance Edition | Learn Blender in 10 Hours
+    </title>
+    <meta
+      name="description"
+      content="Learn Blender in just 10 hours and land your first Fiverr client with the exact Blender + Fiverr system used to charge ₹45,000 per animation."
+    />
+
+    <!-- Google Font: Poppins -->
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <!-- ===================== VIEWPORT GRID BACKDROP (decorative, purely visual) ===================== -->
+    <div class="viewport-grid" aria-hidden="true"></div>
+
+    <!-- ===================== NAVIGATION ===================== -->
+    <header class="navbar" id="navbar">
+      <nav class="nav-container">
+        <a href="#home" class="logo">
+          <img src="images/Logo.png" alt="BlenderMC Logo" class="logo-img" />
+        </a>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="#" class="nav-link">Course</a></li>
+          <!-- <li><a href="index.html/contact" class="nav-link">Contact</a></li> -->
+          <li>
+            <!-- REPLACE HERE: Point this Buy Now link to your Razorpay payment link -->
+            <a
+              href="https://razorpay.com/payment-link/plink_TEoRaVgR99mHNc"
+              class="nav-link nav-cta"
+              id="navBuyBtn"
+              >Buy Now</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===================== HERO SECTION ===================== -->
+      <section class="hero" id="home">
+        <div class="hero-container">
+          <div class="hero-content fade-in">
+            <p class="eyebrow">🎬 Freelance 3D Artist Blueprint</p>
+
+            <h1 class="hero-title">
+              Blender Masterclass
+              <span class="accent-text">— Freelance Edition</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Learn Blender in Just 10 Hours &amp; Get Your First Fiverr Client
+            </p>
+
+            <p class="hero-description">
+              I charge <strong>₹45,000</strong> for a 30-second animation. In
+              this course, I'll teach you the exact Blender + Fiverr system I
+              use to land clients — start to finish, no fluff.
+            </p>
+
+            <div class="hero-badges">
+              <span class="badge">
+                <span class="badge-dot" aria-hidden="true"></span>
+                70+ students joined
+              </span>
+              <span class="badge badge-warning">
+                ⏳ Price increases to ₹999 after the first 100 students
+              </span>
+            </div>
+
+            <div class="price-tag">
+              <span class="price-old">₹999</span>
+              <span class="price-new"
+                >₹499/- <small>Only for today</small></span
+              >
+            </div>
+
+            <div class="hero-cta">
+              <!-- REPLACE HERE: Add your Razorpay payment link to this Buy Now button -->
+              <a
+                href="https://razorpay.com/payment-link/plink_TEoRaVgR99mHNc"
+                class="btn btn-primary"
+                id="heroBuyBtn"
+              >
+                Buy Now — ₹499
+              </a>
+              <!-- REPLACE HERE: Add your WhatsApp chat link (e.g. https://wa.me/916297179352) -->
+              <!-- <a
+                href="https://wa.me/916297179352"
+                class="btn btn-secondary"
+                id="heroWhatsappBtn"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  class="btn-icon"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.48 1.32 4.98L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2zm0 18.13h-.01c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.26-8.23 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.55-3.7 8.24-8.24 8.24z"
+                  />
+                </svg>
+                Chat on WhatsApp
+              </a> -->
+              <p>
+                Video mein ₹999 bola tha, but launch ke liye ₹499 kar diya hai
+              </p>
+            </div>
+          </div>
+
+          <div class="hero-visual fade-in">
+            <!-- Signature element: hero video styled as a Blender viewport frame -->
+            <div class="viewport-frame float-anim">
+              <!-- REPLACE HERE: swap YOUR_VIDEO_ID with your actual YouTube video/Shorts ID -->
+              <div class="video-wrapper-vertical">
+                <iframe
+                  src="https://www.youtube.com/embed/dFa8QdQva6A"
+                  title="Blender Masterclass Course Preview"
+                  frameborder="0"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== WHAT YOU GET SECTION ===================== -->
+      <section class="features-section" id="course">
+        <div class="section-container">
+          <h2 class="section-heading fade-in">What You Get</h2>
+          <p class="section-subheading fade-in">
+            Everything you need to go from beginner to freelancer
+          </p>
+
+          <div class="features-grid">
+            <div class="feature-card fade-in">
+              <span class="feature-icon" aria-hidden="true">🎓</span>
+              <h3>10+ Hour Blender Course</h3>
+              <p>
+                Complete, structured lessons that take you from zero to
+                confidently shipping client work.
+              </p>
+            </div>
+
+            <div class="feature-card fade-in">
+              <span class="feature-icon" aria-hidden="true">💼</span>
+              <h3>My Fiverr Client System</h3>
+              <p>The exact process I use to land paying clients on Fiverr.</p>
+              <span class="feature-value">Worth ₹5000</span>
+            </div>
+
+            <div class="feature-card fade-in">
+              <span class="feature-icon" aria-hidden="true">🗂️</span>
+              <h3>4 Ready-to-use Portfolio Projects</h3>
+              <p>
+                Polished project files you can showcase to attract your first
+                clients.
+              </p>
+            </div>
+
+            <div class="feature-card fade-in">
+              <span class="feature-icon" aria-hidden="true">📦</span>
+              <h3>100+ Blender Assets Pack</h3>
+              <p>
+                Models, materials, and HDRIs ready to drop into your own scenes.
+              </p>
+              <span class="feature-value">Worth ₹999</span>
+            </div>
+
+            <div class="feature-card fade-in">
+              <span class="feature-icon" aria-hidden="true">📝</span>
+              <h3>Gig Description Templates</h3>
+              <p>
+                Proven, copy-paste Fiverr gig descriptions that convert visitors
+                into buyers.
+              </p>
+              <span class="feature-value">Worth ₹499</span>
+            </div>
+
+            <div class="feature-card fade-in">
+              <span class="feature-icon" aria-hidden="true">🖼️</span>
+              <h3>Thumbnail Templates</h3>
+              <p>
+                Eye-catching gig thumbnail templates designed to stand out in
+                search results.
+              </p>
+            </div>
+
+            <div class="feature-card fade-in">
+              <span class="feature-icon" aria-hidden="true">💬</span>
+              <h3>30 Days WhatsApp Support</h3>
+              <p>Direct access to me for a full month to get unstuck fast.</p>
+            </div>
+          </div>
+
+          <!-- Pricing summary -->
+          <div class="pricing-summary fade-in">
+            <div class="pricing-row">
+              <span>Total Value</span>
+              <span class="pricing-strike">₹8497</span>
+            </div>
+            <div class="pricing-row pricing-row-final">
+              <span>Today's Price</span>
+              <span class="pricing-final">₹499</span>
+            </div>
+            <!-- REPLACE HERE: Add your Razorpay payment link to this Buy Now button -->
+            <a
+              href="https://razorpay.com/payment-link/plink_TEoRaVgR99mHNc"
+              class="btn btn-primary btn-block"
+              id="featuresBuyBtn"
+              >Buy Now — ₹499</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- ===================== CUSTOMER REVIEWS SECTION ===================== -->
+      <section class="reviews-section" id="reviews">
+        <div class="section-container">
+          <h2 class="section-heading fade-in">What Clients Say's</h2>
+          <p class="section-subheading fade-in">
+            Real feedback from real Fiverr clients
+          </p>
+
+          <div class="reviews-carousel fade-in" id="reviewsCarousel">
+            <div class="carousel-viewport" id="carouselViewport">
+              <div class="reviews-track" id="reviewsTrack">
+                <!-- Slide 1: YouTube video testimonial -->
+                <div class="review-slide">
+                  <div class="slide-frame">
+                    <!-- REPLACE HERE: swap YOUR_VIDEO_ID with your testimonial video's YouTube ID -->
+                    <iframe
+                      src="https://www.youtube.com/embed/7azo1lVcGx8?si=S8cuepC3qhZwIMTM"
+                      title="Client video testimonial"
+                      frameborder="0"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allow="
+                        accelerometer;
+                        autoplay;
+                        clipboard-write;
+                        encrypted-media;
+                        gyroscope;
+                        picture-in-picture;
+                      "
+                      allowfullscreen
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+                </div>
+
+                <!-- Slide 2: Fiverr gig screenshot (part 1) -->
+                <div class="review-slide">
+                  <div class="slide-frame slide-frame-image">
+                    <!-- REPLACE HERE: swap with your Fiverr gig screenshot (top part) -->
+                    <img
+                      src="images/fiverr-gig-1.jpeg"
+                      alt="Fiverr gig listing screenshot, part 1"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+
+                <!-- Slide 3: Fiverr gig screenshot (part 2) -->
+                <div class="review-slide">
+                  <div class="slide-frame slide-frame-image">
+                    <!-- REPLACE HERE: swap with your Fiverr gig screenshot (remaining part) -->
+                    <img
+                      src="images/fiverr-gig-2.jpeg"
+                      alt="Fiverr gig listing screenshot, part 2"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+
+                <!-- Slide 4: Client review 1 -->
+                <div class="review-slide">
+                  <div class="slide-frame slide-frame-review">
+                    <div class="review-card">
+                      <svg
+                        class="quote-icon"
+                        viewBox="0 0 32 24"
+                        width="36"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M0 24V13.5C0 6 4.8 0.8 12 0v5.5C8 6.5 5.6 9 5.6 13.5H12V24H0zm18 0V13.5C18 6 22.8 0.8 30 0v5.5c-4 1-6.4 3.5-6.4 8H30V24H18z"
+                        />
+                      </svg>
+                      <div class="testi-stars">★★★★★</div>
+                      <!-- REPLACE HERE: swap in your client's review text -->
+                      <p class="review-text">
+                        "Amazing experience working with him! He understood
+                        exactly what I wanted and delivered a high-quality video
+                        even better than I expected. Communication was smooth,
+                        and he was very professional throughout the whole
+                        process. I highly recommend him and will definitely work
+                        with him again!"
+                      </p>
+                      <div class="review-author">
+                        <!-- REPLACE HERE: swap with client's profile/company logo -->
+                        <img
+                          src="images/client-logo-1.jpeg"
+                          alt=""
+                          class="review-avatar"
+                          loading="lazy"
+                        />
+                        <div class="review-author-info">
+                          <!-- REPLACE HERE: client name -->
+                          <span class="review-name">Zetch_</span>
+                          <!-- REPLACE HERE: client country/region -->
+                          <span class="review-location">— Turkey</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 5: Client review 2 -->
+                <div class="review-slide">
+                  <div class="slide-frame slide-frame-review">
+                    <div class="review-card">
+                      <svg
+                        class="quote-icon"
+                        viewBox="0 0 32 24"
+                        width="36"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M0 24V13.5C0 6 4.8 0.8 12 0v5.5C8 6.5 5.6 9 5.6 13.5H12V24H0zm18 0V13.5C18 6 22.8 0.8 30 0v5.5c-4 1-6.4 3.5-6.4 8H30V24H18z"
+                        />
+                      </svg>
+                      <div class="testi-stars">★★★★★</div>
+                      <!-- REPLACE HERE: swap in your client's review text -->
+                      <p class="review-text">
+                        "Amazing work! Super easy to communicate with and very
+                        responsive to feedback. The delivery exceeded my
+                        expectations and I'll definitely come back for more
+                        projects!"
+                      </p>
+                      <div class="review-author">
+                        <!-- REPLACE HERE: swap with client's profile/company logo -->
+                        <img
+                          src="images/client-logo-2.jpeg"
+                          alt=""
+                          class="review-avatar"
+                          loading="lazy"
+                        />
+                        <div class="review-author-info">
+                          <!-- REPLACE HERE: client name -->
+                          <span class="review-name">Perimvo</span>
+                          <!-- REPLACE HERE: client country/region -->
+                          <span class="review-location">_Netherlands</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 6: Client review 3 -->
+                <div class="review-slide">
+                  <div class="slide-frame slide-frame-review">
+                    <div class="review-card">
+                      <svg
+                        class="quote-icon"
+                        viewBox="0 0 32 24"
+                        width="36"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M0 24V13.5C0 6 4.8 0.8 12 0v5.5C8 6.5 5.6 9 5.6 13.5H12V24H0zm18 0V13.5C18 6 22.8 0.8 30 0v5.5c-4 1-6.4 3.5-6.4 8H30V24H18z"
+                        />
+                      </svg>
+                      <div class="testi-stars">★★★★★</div>
+                      <!-- REPLACE HERE: swap in your client's review text -->
+                      <p class="review-text">
+                        "Best guy on Fiverr, i order from him only!"
+                      </p>
+                      <div class="review-author">
+                        <!-- REPLACE HERE: swap with client's profile/company logo -->
+                        <img
+                          src="images/client-logo-3.jpeg"
+                          alt=""
+                          class="review-avatar"
+                          loading="lazy"
+                        />
+                        <div class="review-author-info">
+                          <!-- REPLACE HERE: client name -->
+                          <span class="review-name">Teamblazeforce</span>
+                          <!-- REPLACE HERE: client country/region -->
+                          <span class="review-location">_Norway</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Prev / Next controls -->
+            <button
+              class="carousel-btn carousel-btn-prev"
+              id="prevSlideBtn"
+              aria-label="Previous slide"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="22"
+                height="22"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"
+                />
+              </svg>
+            </button>
+            <button
+              class="carousel-btn carousel-btn-next"
+              id="nextSlideBtn"
+              aria-label="Next slide"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="22"
+                height="22"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M8.6 7.4 10 6l6 6-6 6-1.4-1.4L13.2 12z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Pagination dots (generated by JS) -->
+          <div
+            class="carousel-dots"
+            id="carouselDots"
+            role="tablist"
+            aria-label="Review slides"
+          ></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <div class="section-container footer-container">
+        <p class="footer-brand">Blender Masterclass – Freelance Edition</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+        <p class="footer-copy">© 2026 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="script1.js"></script>
+  </body>
+</html>
