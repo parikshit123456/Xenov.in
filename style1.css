@@ -1142,10 +1142,12 @@ button:focus-visible {
 .carousel-viewport {
   overflow: hidden;
   border-radius: var(--radius-md);
+  transition: height 0.4s ease;   /* NEW — smooth height change between slides */
 }
 
 .reviews-track {
   display: flex;
+   align-items: flex-start;   /* NEW — stops all slides stretching to the tallest one's height */
   width: 100%;
   transition: transform var(--transition-medium);
 }
